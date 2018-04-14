@@ -7,8 +7,13 @@
 # end
 
 # Using #collect
+# def reverse_each_word(string)
+#   words = string.split(" ")
+#   reversed_words = words.collect{ |word| word.reverse }
+#   reversed_words.join(" ")
+# end
+
+# Short version
 def reverse_each_word(string)
-  words = string.split(" ")
-  reversed_words = words.collect{ |word| word.reverse }
-  reversed_words.join(" ")
+  string.split.collect{ |word| word.reverse }.join(" ")
 end
